@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
+    <style>
+      div {
+        margin-bottom: 1px;
+      }
+
+      div .col, div .col-xl, div .col-3,
+      div .col-auto {
+        border: 1px solid black;
+        background-color: antiquewhite;
+      }
+    </style>
+</head>
+<body>
+    <h2>Apartado 3</h2>
+    <div class="row text-center">
+        <div class="col order-3">Columna 1</div>
+        <div class="col order-2">Columna 2</div>
+        <div class="col order-1">Columna 3</div>
+    </div>
+    <h2>Apartado 4</h2>
+    <div class="row text-center">
+        <div class="col-xl order-3">.col .order-xl 1</div>
+        <div class="col-xl order-2">.col .order-xl 2</div>
+        <div class="col-xl order-1">.col .order-xl 3</div>
+    </div>
+    <h2>Apartado 5</h2>
+    <div class="row text-center">
+        <div class="col-3">.col-3</div>
+        <div class="col-3 ml-auto offset-3">.col-3 .ml-auto</div>
+        <div class="col-3">.col-3</div>
+    </div>
+    <div class="row text-center">
+        <div class="col-3 ml-auto offset-3">.col-3 .ml-auto</div>
+        <div class="col-3 ml-auto offset-3">.col-3 .ml-auto</div>
+    </div>
+</body>
+</html>
